@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>
+     Mike's HTML Fundamentals page
+   </title>
+   <script type="text/javascript">
+    window.onload = function() {
+      var newLine = "\r\n";
+      var msg = "See Mike do popup's." + newLine + "Click OK to proceed.";
+      alert(msg);
+    };
+    </script>
+    <style type="text/css">
+        .alert {color:red}
+    </style>
+ </head>
+ <body>
+  <div id="blinkingDiv">See Mike blink</div>
+  <br>
+  <a href="https://www.w3schools.com" target="_blank">See Mike link!</a>
+  <br>
+  <table>
+    <tr>
+      <th>Company</th>
+      <th>Make</th>
+      <th>Model</th>
+    </tr>
+    <tr>
+      <td>Honda</td>
+      <td>CRV</td>
+      <td>LX</td>
+    </tr>
+    <tr>
+      <td>Toyota</td>
+      <td>Camry</td>
+      <td>GX</td>
+    </tr>
+  </table>
+  <br>
+  <h1 style="color:purple">See Mike embed cool new video</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/s8nCo3RtqRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ <script type="text/javascript">
+  var blink_speed = 1000;
+  var t = setInterval(function () {
+      var ele = document.getElementById('blinkingDiv');
+      ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+  }, blink_speed);    
+</script>
+</html>
